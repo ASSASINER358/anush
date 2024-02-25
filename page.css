@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 3000px;
+    background-color: rgb(184, 216, 245) ;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.desc{
+    display: inline-block;
+    position: relative;
+    font-size: large;
+        font-family: "Rubik Doodle Shadow", system-ui;
+        font-weight:bold;
+        font-style: normal;
+        text-align: top;
+        top:-200px;
+}
+.desc1{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    font-size: large;
+        font-family: "Rubik Doodle Shadow", system-ui;
+        font-weight:bold;
+        font-style: normal;
+        text-align: top;
+        top:-100px;
+        left:50px;
+}
+
+.img {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+  object-fit: contain;
+  margin-top: 30px;
+}
+
+.next-level {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.box{
+    background-color:rgb(206, 224, 239);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin-bottom: 50px;
+}
+#goButton{
+
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background: 0 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 16px;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 5px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+    
+}
+#goButton:hover {
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px,-4px);
+}
+#goButton:focus-visible{
+    outline-offset: 1px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="success.css">
+    
+</head>
+<body>
+    <div>
+        <audio id="audio" autoplay>
+            <source src="images/congratulation.m4a" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="muteButton">Toggle Mute</button>
+        <script src="success_audioscript.js"></script>
+    </div>
+
+    <div class="background"></div>
+    <div id="confetti"></div>
+    <div id="heading">
+        <h1>CONGRATULATIONSS !!!!! </h1>   
+    </div>
+    <div id="container">
+        <div id="congratsText">Good job nigga Now nere iri</div>
+        <div id="imageContainer">
+            
+            <!-- Insert your image URL here -->
+            <img src="images/sitstraight.jpg" class="sitting" >
+        </div>
+        <div id="walkDownText">Shall we walk you down through your life now and solve some puzzles?</div>
+        <div>dont click 'yeah'</div>
+        <div id="buttonsContainer">
+            <button class="actionButton" onclick="navigateToAnotherPage()">Yes</button>
+            <button class="actionButton" onclick="hideYeahButton()">Yeah</button>
+        </div>
+    </div>
+</div>
+    
+    <script>
+        function navigateToAnotherPage() {
+            // Replace 'another-page.html' with the URL of the page you want to navigate to
+            window.location.href = 'page1.html';
+        }
+
+        function hideYeahButton() {
+            document.querySelector('.actionButton:last-child').style.display = 'none';
+        }
+    </script>
+    <script>
+        // Function to activate confetti effect
+        function activateConfetti() {
+            confetti({
+      particleCount: 100,  // You can adjust the number of particles
+      spread: 160,        // You can adjust the spread of particles
+      origin: { x: 0.5, y: 0.5 },  // Adjust the position (0.5, 0.5 is the center)
+    });
+
+    confetti({
+      particleCount: 100,  // You can adjust the number of particles
+      spread: 160,        // You can adjust the spread of particles
+      origin: { x: 0.3, y: 0.7 },  // Adjust the position (0.3, 0.7 is an example)
+    });
+        }
+      
+        // Trigger the confetti effect when the window has fully loaded
+        window.onload = function () {
+          activateConfetti();
+        };
+</script>
+</body>
+</html>

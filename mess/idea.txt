@@ -1,0 +1,12 @@
+hello
+what is your name (after wrong, make a hint text saying its what we call you)
+good job, now nere iri haha
+now lets walk you down through levels of your annoying ages shall we?
+yes yeah
+go new page, scrollable
+make levels for each scrolls age 0-5
+then make quiz
+5-10
+make quiz 10-12
+make quiz 
+new age, quiz then birthday cake wish and blow 
